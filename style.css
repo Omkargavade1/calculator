@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+
+.display {
+    width: 100%;
+    height: 60px;
+    background-color: #444;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 0 15px;
+    font-size: 2em;
+    color: white;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns of equal width */
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.1s;
+    background-color: #666;
+    color: white;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+.operator {
+    background-color: #ff9500;
+}
+
+.operator:hover {
+    background-color: #ffa520;
+}
+
+.equals {
+    background-color: #007bff;
+    grid-column: span 2; /* Make the equals button span 2 columns */
+}
+
+.equals:hover {
+    background-color: #0056b3;
+}
+
+.clear {
+    background-color: #cc3333;
+}
+
+.clear:hover {
+    background-color: #d94d4d;
+}
+
+.delete {
+    background-color: #996633;
+}
+.delete:hover {
+    background-color: #b3774d;
+}
+
+/* Make the '0' button span two columns */
+.zero {
+    grid-column: span 2;
+}style.css
